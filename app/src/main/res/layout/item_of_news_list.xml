@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="horizontal"
+    android:layout_marginEnd="@dimen/smallMargin"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/iv_articles_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="@dimen/smallMargin"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/news" />
+
+    <TextView
+        android:id="@+id/tv_articles_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_articles_image"
+        android:layout_marginStart="@dimen/smallMargin"
+        android:layout_toEndOf="@+id/iv_articles_image"
+        android:textSize="16sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        tools:text="News Title" />
+
+    <TextView
+        android:id="@+id/tv_article_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_articles_title"
+        android:layout_below="@+id/tv_articles_title"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:textSize="12sp"
+        tools:text="Author: Jack Sparrow" />
+
+    <TextView
+        android:id="@+id/tv_article_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_article_author"
+        android:layout_alignBottom="@+id/tv_article_author"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        tools:text="08:30 01.08.2017" />
+
+
+    <TextView
+        android:id="@+id/tv_articles_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_articles_image"
+        android:layout_below="@+id/iv_articles_image"
+        android:textSize="12sp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        tools:text="News description/Long description/Long description//Long description/Long description/Long description/Long description/Long description/Long description/Long description/Long description/Long description/Long description" />
+
+
+</RelativeLayout>
